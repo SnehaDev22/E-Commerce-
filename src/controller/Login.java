@@ -37,7 +37,7 @@ public class Login extends HttpServlet {
 			} else {
 		        out.print("<p style='color: red; margin-top: 30px; text-align: center; font-weight: bold; font-size: 18px;'>Invalid login or password</p>");
 
-				RequestDispatcher rd = request.getRequestDispatcher("index.html");
+				RequestDispatcher rd = request.getRequestDispatcher("login.html");
 				rd.include(request, response);
 			}
 		} catch (Exception ex) {
